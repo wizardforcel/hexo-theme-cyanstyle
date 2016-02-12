@@ -3,11 +3,13 @@
     <%- partial('article', {post: post, index: true}) %>
   <% }) %>
   <% if (page.total > 1){ %>
-    <nav id="page-nav">
-      <%- paginator({
-        prev_text: '&laquo; Prev',
-        next_text: 'Next &raquo;'
-      }) %>
+    <nav id="pagination">
+      <nav id="page-nav">
+        <%- paginator({
+          prev_text: '&laquo; Prev',
+          next_text: 'Next &raquo;'
+        }) %>
+      </nav>
     </nav>
   <% } %>
 <% } else { %>

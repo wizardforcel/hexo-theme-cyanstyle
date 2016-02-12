@@ -446,6 +446,58 @@ img.wp-smiley,
 }
 
 /* Navigation */
+#pagination {
+  zoom: 1;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+}
+#pagination:before,
+#pagination:after {
+  content: "";
+  display: table;
+}
+#pagination:after {
+  clear: both;
+}
+#pagination a,
+#pagination span {
+  padding: 10px 20px;
+  line-height: 1;
+  height: 2ex;
+}
+#pagination a {
+  color: #999;
+  text-decoration: none;
+}
+#pagination a:hover {
+  color: #000;
+}
+#pagination .prev {
+  float: left;
+}
+#pagination .next {
+  float: right;
+}
+#pagination .page-number {
+  display: inline-block;
+}
+@media mq-mobile {
+  #pagination .page-number {
+    display: none;
+  }
+}
+#pagination .current {
+  color: #000;
+  font-weight: bold;
+}
+#pagination .space {
+  color: #ddd;
+}
+
 .site-content nav {
 	clear: both;
 	line-height: 2;
