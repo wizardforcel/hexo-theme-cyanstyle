@@ -1,22 +1,12 @@
 <% if (post.prev || post.next){ %>
-<nav id="article-nav">
-  <% if (post.prev){ %>
-    <a href="<%- url_for(post.prev.path) %>" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        <% if (post.prev.title){ %>
-          <%= post.prev.title %>
-        <% } else { %>
-          (no title)
-        <% } %>
-      </div>
-    </a>
-  <% } %>
-  <% if (post.next){ %>
-    <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"><%= post.next.title %></div>
-    </a>
-  <% } %>
-</nav>
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    <% if (post.prev){ %>
+        <span class="nav-previous"><a href="<%- url_for(post.prev.path) %>" rel="prev"><span class="meta-nav">←</span> <% if (post.prev.title){ %><%= post.prev.title %><% } else { %>(no title)<% } %></a></span>
+    <% } %>
+    <% if (post.next){ %>
+        <span class="nav-next"><a href="<%- url_for(post.next.path) %>" rel="next"><% if (post.next.title){ %><%= post.next.title %><% } else { %>(no title)<% } %> <span class="meta-nav">→</span></a></span>
+    <% } %>
+</nav><!-- .nav-single -->
 <% } %>
+
