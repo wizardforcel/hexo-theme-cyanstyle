@@ -6,8 +6,8 @@
     <nav id="pagination">
       <nav id="page-nav">
         <%- paginator({
-          prev_text: '&laquo; Prev',
-          next_text: 'Next &raquo;'
+          prev_text: '&laquo; ' + theme.prev,
+          next_text: theme.next + ' &raquo;'
         }) %>
       </nav>
     </nav>

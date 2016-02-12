@@ -10,6 +10,8 @@ menu:
 rss: /atom.xml
 # Content
 excerpt_link: 更多内容
+prev: 上一页
+next: 下一页
 fancybox: true
 
 # Sidebar

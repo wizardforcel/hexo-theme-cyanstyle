@@ -861,8 +861,8 @@ footer[role="contentinfo"] a:hover {
 
 article.sticky .featured-post {
     /* Border Line for Special */
-	border-top: 4px double rgba(0, 0, 0, 0.24);
-	border-bottom: 4px double rgba(0, 0, 0, 0.24);
+	border-top: 1px solid rgba(0, 0, 0, 0.24);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.24);
 	color: #757575;
 	font-size: 13px;
 	font-size: 0.928571429rem;
@@ -1012,7 +1012,7 @@ article.sticky .featured-post {
 .comment-content pre {
     border: 1px solid rgba(0, 0, 0, 0.24);
     font-family: Consolas, Monaco, Lucida Console, monospace;
-    margin-top: 15px;
+    margin-bottom: 15px;
     overflow: auto;
     padding: 7px 15px;
     -webkit-border-radius: 2px;
@@ -1109,7 +1109,7 @@ img.aligncenter,
 }
 .site-content article {
     /* Border Line for Article Bottom*/
-	border-bottom: 4px double rgba(0, 0, 0, 0.24);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.24);
 	margin-bottom: 72px;
 	margin-bottom: 5.142857143rem;
 	padding-bottom: 24px;
@@ -1142,7 +1142,7 @@ footer.entry-meta {
 /* Hexo Code */
 figure.highlight {
     border: 1px solid rgba(0, 0, 0, 0.24);
-    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 7px 15px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
