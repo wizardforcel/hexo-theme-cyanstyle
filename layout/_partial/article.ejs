@@ -1,35 +1,39 @@
-<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+<article id="<%= post.layout %>-<%= post.slug %>" class="<%= post.layout %>-<%= post.slug %> post type-post status-publish format-standard hentry">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
   </div>
-  <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
-      <header class="article-header">
+    <!--<%- partial('post/gallery') %>-->
+    
+      <header class="entry-header">
+        <% if (post.link || post.title){ %>
         <%- partial('post/title', {class_name: 'article-title'}) %>
-      </header>
-    <% } %>
-    <div class="article-entry" itemprop="articleBody">
+        <% } %>
+        <div class="comments-link">
+            <% if (post.comments && config.duoshuo_shortname){ %>
+            <a href="<%- url_for(post.path) %>#comments" class="leave-reply">发表回复</a>
+            <% } %>
+            <a href="javascript:void(0);" data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+    
+    <div class="entry-content">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
           <p class="article-more-link">
-            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+            <a href="<%- url_for(post.path) %>#more" class="more-link"><%= theme.excerpt_link %> <span class="meta-nav">→</span></a>
           </p>
         <% } %>
       <% } else { %>
         <%- post.content %>
       <% } %>
-    </div>
-    <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link bdsharebuttonbox" data-cmd="more">分享</a> <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-      <% if (post.comments && config.duoshuo_shortname){ %>
-        <a href="<%- url_for(post.path) %>#comments" class="article-comment-link">留言</a>
-      <% } %>
-      <%- partial('post/tag') %>
+    </div><!-- .entry-content -->
+    
+    <footer class="entry-meta">
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    <%- partial('post/category') %>
+    <%- partial('post/tag') %>
     </footer>
-  </div>
+
   <% if (!index){ %>
     <%- partial('post/nav') %>
   <% } %>

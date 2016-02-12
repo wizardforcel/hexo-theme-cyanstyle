@@ -1,12 +1,5 @@
-<footer id="footer">
-  <% if (theme.sidebar === 'bottom'){ %>
-    <%- partial('_partial/sidebar') %>
-  <% } %>
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
-	  All rights reserved.</p>
-      <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
-    </div>
-  </div>
+<footer id="colophon" role="contentinfo">
+    <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
 </footer>

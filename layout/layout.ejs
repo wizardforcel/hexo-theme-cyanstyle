@@ -3,7 +3,7 @@
   <div id="page" class="hfeed site">
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
       <div id="main" class="wrapper">
-        <div id="primary"><%- body %></div>
+        <div id="primary" class="site-content"><div id="content" role="main"><%- body %></div></div>
         <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
           <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
         <% } %>
