@@ -9,7 +9,7 @@
             <% if (post.comments && theme.duoshuo_shortname){ %>
             <a href="<%- url_for(post.path) %>#comments" class="leave-reply"><%= theme.reply %></a>
             <% } %>
-            <a href="javascript:void(0);" data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="leave-reply bdsharebuttonbox" data-cmd="more"><%= theme.share %</a>
+            <a href="javascript:void(0);" data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="leave-reply bdsharebuttonbox" data-cmd="more"><%= theme.share %></a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
