@@ -946,28 +946,32 @@ article.sticky .featured-post {
 }
 .entry-content code,
 .comment-content code {
-	font-family: Microsoft YaHei,  Consolas, Monaco, Lucida Console, monospace;
-	font-size: 12px;
-	font-size: 0.857142857rem;
-	line-height: 2;
+    font-family: Consolas, Monaco, Lucida Console, monospace;
+    padding: 0 5px;
+    margin: 0 2px;
+    font-size: 0.9em;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
 }
 .entry-content pre,
 .comment-content pre {
-	border: 1px solid #ededed;
-	color: #666;
-	font-family: Microsoft YaHei, Consolas, Monaco, Lucida Console, monospace;
-	font-size: 12px;
-	font-size: 0.857142857rem;
-	line-height: 1.714285714;
-	margin: 24px 0;
-	margin: 1.714285714rem 0;
-	overflow: auto;
-	padding: 24px;
-	padding: 1.714285714rem;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    font-family: Consolas, Monaco, Lucida Console, monospace;
+    margin-top: 15px;
+    overflow: auto;
+    padding: 7px 15px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
 }
 .entry-content pre code,
 .comment-content pre code {
-	display: block;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
 }
 .entry-content abbr,
 .comment-content abbr,
@@ -1083,7 +1087,7 @@ footer.entry-meta {
 
 /* Hexo Code */
 figure.highlight {
-    border: 1px solid #ddd;
+    border: 1px solid rgba(0, 0, 0, 0.24);
     margin-top: 15px;
     padding: 7px 15px;
     -webkit-border-radius: 2px;
@@ -1107,15 +1111,15 @@ figure.highlight td {
 }
 
 figure.highlight .gutter {
-    color: #fff;
+    color: #999;
     padding-right: 15px;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid rgba(0, 0, 0, 0.24);
     text-align: right;
 }
 
 figure.highlight .code {
     padding-left: 15px;
-    border-left: 1px solid #fff;
+    border-left: 1px solid rgba(0, 0, 0, 0.24);
 }
 
 figure.highlight pre {
@@ -1127,6 +1131,7 @@ figure.highlight pre {
 
 figure.highlight .line {
     height: 20px;
+    font-family: Consolas, Monaco, Lucida Console, monospace;
 }
 
 
