@@ -15,15 +15,11 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
-- about
-- support
-- music
-- recent_posts
-- archive
 - category
+- tag
 - tagcloud
-- link
-- account
+- archive
+- recent_posts
 
 # Miscellaneous
 google_analytics:
