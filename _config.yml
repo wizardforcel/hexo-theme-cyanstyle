@@ -15,6 +15,8 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
+- search
+- music
 - category
 - tag
 - tagcloud
@@ -26,3 +28,4 @@ google_analytics:
 favicon: http://7u2hdm.com1.z0.glb.clouddn.com/favicon.ico
 google_site_verification: NCXVSqxqB-os803-VFMtIEd1SUNJVOIjctCfNYUwD0w
 baidu_site_verification: Nzwx7HuplM
+music: http://7u2hdm.com1.z0.glb.clouddn.com/bg.mp3

@@ -1043,6 +1043,56 @@ footer.entry-meta {
 	font-weight: normal;
 }
 
+/* Hexo Code */
+figure.highlight {
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    padding: 7px 15px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    line-height: 1.6;
+    overflow: auto;
+    position: relative;
+    font-size: 0.9em;
+}
+
+figure.highlight table {
+    margin: 0;
+    border-spacing: 0;
+    border: none;
+    width: auto;
+}
+
+figure.highlight td {
+    border: none;
+    padding: 0;
+}
+
+figure.highlight .gutter {
+    color: #fff;
+    padding-right: 15px;
+    border-right: 1px solid #ddd;
+    text-align: right;
+}
+
+figure.highlight .code {
+    padding-left: 15px;
+    border-left: 1px solid #fff;
+}
+
+figure.highlight pre {
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+figure.highlight .line {
+    height: 20px;
+}
+
+
+
 
 /* =Archives
 -------------------------------------------------------------- */
