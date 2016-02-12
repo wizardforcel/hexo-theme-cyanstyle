@@ -932,6 +932,8 @@ article.sticky .featured-post {
 }
 .entry-content blockquote,
 .comment-content blockquote {
+    margin: 0 0 24px;
+    margin: 0 0 1.714285714rem;
     border-left: 4px solid #aaa;
     padding: 0 15px;
     color: #aaa;
@@ -1115,6 +1117,7 @@ figure.highlight .gutter {
     padding-right: 15px;
     border-right: 1px solid rgba(0, 0, 0, 0.24);
     text-align: right;
+    vertical-align: middle;
 }
 
 figure.highlight .code {
