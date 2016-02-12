@@ -1217,6 +1217,7 @@ article.format-aside p:last-child {
 }
 
 
+
 /* =Post formats
 -------------------------------------------------------------- */
 
@@ -1573,6 +1574,24 @@ a.comment-edit-link:hover {
 	text-align: right;
 }
 
+.widget-content {
+    line-height: 1.6em;
+    word-wrap: break-word;
+    font-size: 0.9em;
+}
+
+/* List count */
+.category-list-count, .tag-list-count, .archive-list-count {
+    padding-left: 5px;
+    color: #999;
+    font-size: 0.85em;
+}
+.category-list-count:before, .tag-list-count:before, .archive-list-count:before {
+    content: "(";
+}
+.category-list-count:after, .tag-list-count:after, .archive-list-count:after {
+    content: ")";
+}
 
 /* =Plugins
 ----------------------------------------------- */
