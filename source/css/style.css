@@ -82,6 +82,9 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
 
 /* =Reset
 -------------------------------------------------------------- */
+* {
+    font-family: Microsoft YaHei;
+}
 Microsoft YaHei,html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -704,7 +707,7 @@ section[role="banner"] {
 
 /* Footer */
 footer[role="contentinfo"] {
-	border-top: 1px solid #ededed;
+	border-top: 1px solid rgba(0, 0, 0, 0.24);
 	clear: both;
 	font-size: 12px;
 	font-size: 0.857142857rem;
@@ -896,14 +899,16 @@ article.sticky .featured-post {
 }
 .entry-content blockquote,
 .comment-content blockquote {
-	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
-	padding: 24px;
-	padding: 1.714285714rem;
-	font-style: italic;
+    border-left: 4px solid #aaa;
+    padding: 0 15px;
+    color: #aaa;
 }
-.entry-content blockquote p:last-child,
-.comment-content blockquote p:last-child {
+.entry-content blockquote>:first-child,
+.comment-content blockquote>:first-child {
+	margin-top: 0;
+}
+.entry-content blockquote>:last-child,
+.comment-content blockquote>:last-child {
 	margin-bottom: 0;
 }
 .entry-content code,
