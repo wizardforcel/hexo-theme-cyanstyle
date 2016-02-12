@@ -1,111 +1,70 @@
-# Landscape
+# Hexo Theme: CyanStyle
 
-A brand new default theme for [Hexo].
+CyanStyle 是 Wordpress 的 Twentytwelve 主题在 Hexo 上的迁移。
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+## 安装
 
-## Installation
-
-### Install
-
-``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+```
+git clone https://github.com/wizardforcel/hexo-theme-cyanstyle.git themes/cyanstyle
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+修改 Hexo 的 `_config.yml` 中的 `theme` 为 `cyanstyle`。
 
-### Enable
+## 升级
 
-Modify `theme` setting in `_config.yml` to `landscape`.
-
-### Update
-
-``` bash
-cd themes/landscape
+```
+cd themes/cyanstyle
 git pull
 ```
 
-## Configuration
+## 配置
 
-``` yml
+默认的`_config.yml`文件：
+
+``` yaml
 # Header
 menu:
   Home: /
   Archives: /archives
-rss: /atom.xml
 
 # Content
-excerpt_link: Read More
+excerpt_link: More
+prev: Prev
+next: Next
+reply: Reply
+share: Share
 fancybox: true
 
 # Sidebar
-sidebar: right
 widgets:
+- search
+- music
 - category
+- recent_posts
 - tag
 - tagcloud
-- archives
-- recent_posts
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
-twitter:
-google_plus:
+duoshuo_shortname: 
+rss: 
+google_site_verification: 
+baidu_site_verification: 
+favicon: 
+music: 
 ```
 
-- **menu** - Navigation menu
-- **rss** - RSS link
-- **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
-- **fancybox** - Enable [Fancybox]
-- **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
-- **widgets** - Widgets displaying in sidebar
-- **google_analytics** - Google Analytics ID
-- **favicon** - Favicon path
-- **twitter** - Twiiter ID
-- **google_plus** - Google+ ID
++ `menu` - 导航栏的菜单，键值对形式，键为文字，值为连接
++ `widgets` - 侧栏上的小工具，一行一个
++ `duoshuo_shortname` - 站点的多说ID，可选
++ `fancybox` - 是否开启 jQuery 弹出层效果
++ `google_analytics` - Google Analytics ID ，可选
++ `rss` - rss 订阅链接，可选
++ `google_site_verification` - 用于谷歌站长工具验证所有权的ID，可选
++ `baidu_site_verification` - 用于百度站长工具验证所有权的ID，可选
++ `favicon` - 用于在浏览器标签上显示的图标，可选，如果不指定则会加载默认图标
++ `music` - 侧栏上的播放器音乐，如果不指定音乐组件将不会显示
 
-## Features
+## 协议
 
-### Fancybox
-
-Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
-
-```
-![img caption](img url)
-
-{% fancybox img_url [img_thumbnail] [img_caption] %}
-```
-
-### Sidebar
-
-You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
-
-Landscape provides 5 built-in widgets:
-
-- category
-- tag
-- tagcloud
-- archives
-- recent_posts
-
-All of them are enabled by default. You can edit them in `widget` setting.
-
-## Development
-
-### Requirements
-
-- [Grunt] 0.4+
-- Hexo 2.4+
-
-### Grunt tasks
-
-- **default** - Download [Fancybox] and [Font Awesome].
-- **fontawesome** - Only download [Font Awesome].
-- **fancybox** - Only download [Fancybox].
-- **clean** - Clean temporarily files and downloaded files.
-
-[Hexo]: http://zespia.tw/hexo/
-[Fancybox]: http://fancyapps.com/fancybox/
-[Font Awesome]: http://fontawesome.io/
-[Grunt]: http://gruntjs.com/
+[GPL v3+](LICENSE)
