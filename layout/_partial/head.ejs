@@ -47,7 +47,12 @@
   <% } %>
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
+  <% } else { %>
+    <link rel="icon" href="<%- config.root %>css/images/favicon.ico">
   <% } %>
   <%- css('css/style') %>
   <%- partial('google-analytics') %>
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
 </head>
