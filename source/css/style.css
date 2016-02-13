@@ -580,10 +580,13 @@ body.custom-font-enabled {
 a {
 	outline: none;
 	color: rgb(81, 165, 168); /*Article Title Normal*/
+    text-decoration: none;
 }
 a:hover {
 	color: rgb(0, 0, 0); /*Article Title Hover*/
+    text-decoration: underline;
 }
+
 
 /* Backgroud image */
 #bg {
