@@ -8,8 +8,8 @@
           <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
         </h2>
       <% } else { %>
-        <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
-        <h2 class="site-description"><script>hitokoto();</script></h2>
+        <h2 class="site-description hitokoto"></h2>
+        <script type="text/javascript" src="https://v1.hitokoto.cn/?encode=js"></script>
       <% } %>
     </hgroup>
 
